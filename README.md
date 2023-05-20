@@ -8,8 +8,6 @@
 
     - https://github.com/Sharkkcode/Deep_Learning_Works_CCU/blob/main/paper_report_slide.pdf
 
-## Project
-
 ## HW_1_Tensorflow
 
 - Tensorflow
