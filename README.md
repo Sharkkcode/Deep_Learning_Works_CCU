@@ -4,7 +4,11 @@
 
 - Report :
 
+    - https://github.com/Sharkkcode/Deep_Learning_Works_CCU/blob/main/project_report.pdf
+
 - Slide :
+
+    - https://github.com/Sharkkcode/Deep_Learning_Works_CCU/blob/main/project_slide.pdf
 
 ## Report -- BREAKING CERTIFIED DEFENSES: SEMANTIC ADVERSARIAL EXAMPLES WITH SPOOFED ROBUSTNESS CERTIFICATES
 
