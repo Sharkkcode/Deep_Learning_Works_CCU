@@ -1,12 +1,20 @@
 # Deep_Learning_Works_CCU ( 2023 Spring CCU Deep Learning Project, Report, Homeworks and Labs )
 
-## Project --
+## Project -- The Integration of adversarial-robustness-toolbox and kserve
+
+- Report :
+
+- Slide :
 
 ## Report -- BREAKING CERTIFIED DEFENSES: SEMANTIC ADVERSARIAL EXAMPLES WITH SPOOFED ROBUSTNESS CERTIFICATES
 
 - Slide :
 
     - https://github.com/Sharkkcode/Deep_Learning_Works_CCU/blob/main/paper_report_slide.pdf
+
+## HW_Mid and HW_Fin ( code )
+
+- Midterm and Final
 
 ## HW_1_Tensorflow
 
@@ -23,10 +31,6 @@
 ## HW_4_Residual_Networks
 
 - Residual Networks ( Due to the large size of the dataset, only the source code will be provided. )
-
-## HW_Mid
-
-- Midterm
 
 ## HW_6_RNN
 
