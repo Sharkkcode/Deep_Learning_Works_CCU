@@ -1,0 +1,25 @@
+apiVersion: "serving.kserve.io/v1beta1"
+kind: "InferenceService"
+metadata:
+  name: "artserver"
+spec:
+  predictor:
+    model:
+      modelFormat:
+        name: sklearn
+      storageUri: gs://kfserving-examples/models/sklearn/mnist/art
+  explainer:
+    containers:
+    - image: lo0k0502/artserver:latest
+      name: artserver
+      args:
+        - --model_name=artserver
+        - --adversary_type=ShadowAttack
+        - --predictor_host=artserver.kserve-test.svc.cluster.local
+      resources:
+        limits:
+          memory: "2Gi"
+          cpu: "1"
+        requests:
+          memory: "2Gi"
+          cpu: "1"

@@ -1,0 +1,12 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: kserve-controller-manager
+  namespace: kserve
+spec:
+  template:
+    spec:
+      containers:
+        - name: manager
+          command:
+          image: docker.io/lo0k0502/manager-12782ae64d3f5f3dbe4595b05a2cb78d@sha256:f1937e78c6e3c1e3a5ec1fa91ed119da7d9ebc2ef8f418532d157d34c702f2fc

@@ -1,0 +1,43 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: inferenceservice-config
+  namespace: kserve
+data:
+  logger: |-
+    {
+        "image" : "docker.io/lo0k0502/agent-59c2cdf0cc2970eed0581d28646561d9@sha256:54af34356c6dad2f9f8c6d612d128108cd41d6da3ce33e683d9d63df32f6bc57",
+        "memoryRequest": "100Mi",
+        "memoryLimit": "100Mi",
+        "cpuRequest": "100m",
+        "cpuLimit": "100m"
+    }
+  batcher: |-
+    {
+        "image" : "docker.io/lo0k0502/agent-59c2cdf0cc2970eed0581d28646561d9@sha256:54af34356c6dad2f9f8c6d612d128108cd41d6da3ce33e683d9d63df32f6bc57",
+        "memoryRequest": "100Mi",
+        "memoryLimit": "100Mi",
+        "cpuRequest": "100m",
+        "cpuLimit": "100m"
+    }
+  agent: |-
+    {
+        "image" : "docker.io/lo0k0502/agent-59c2cdf0cc2970eed0581d28646561d9@sha256:54af34356c6dad2f9f8c6d612d128108cd41d6da3ce33e683d9d63df32f6bc57",
+        "memoryRequest": "100Mi",
+        "memoryLimit": "500Mi",
+        "cpuRequest": "100m",
+        "cpuLimit": "100m"
+    }
+  router: |-
+    {
+        "image" : "docker.io/lo0k0502/router-20acce65bc84b6e5b28ae59ce41635d3@sha256:5bf33299becf33d9e28647723c0a4b5c6734a3c114fcfd9fa8c35292dc935668",
+        "memoryRequest": "100Mi",
+        "memoryLimit": "500Mi",
+        "cpuRequest": "100m",
+        "cpuLimit": "100m"
+    }
+  metricsAggregator: |-
+    {
+        "enableMetricAggregation": "false",
+        "enablePrometheusScraping" : "false"
+    }
